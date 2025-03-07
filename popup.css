@@ -1,0 +1,92 @@
+/* Center the popup on the page */
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #e3eaf5; /* Softer background */
+  font-family: Arial, sans-serif;
+}
+
+/* Main container with larger size and softer shadow */
+.container {
+  background: #fff;
+  width: 350px; /* Increased width */
+  padding: 40px; /* More padding */
+  border-radius: 24px; /* Smoother corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px; /* Larger text */
+  margin-bottom: 25px;
+  color: #222; /* Slightly darker for contrast */
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px; /* Increased text size */
+  margin-bottom: 20px;
+  border: 2px solid #bbb;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff6600; /* Changed to orange for vibrance */
+  outline: none;
+}
+
+/* Modern gradient button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff6600, #cc4400);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated shine effect */
+button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.6s;
+}
+
+button:hover:before {
+  left: 100%;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #cc4400, #a03200);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Updated status message styling */
+#statusMessage {
+  font-size: 16px; /* Slightly larger */
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ff6600; /* Orange to match the theme */
+}
